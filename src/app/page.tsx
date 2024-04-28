@@ -1,4 +1,4 @@
-import Main from "./main/Main";
+import Main from "./main/page";
 
 const IndexPage = () => {
   return <Main />;

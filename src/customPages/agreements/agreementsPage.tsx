@@ -1,10 +1,11 @@
 'use client';
 
-import React from 'react';
 import Image from 'next/image';
-import bg from '../../../public/images/1.jpg';
+import bg from '../../../public/images/2.jpg';
+import { AgreementsList } from '@/widgets/agreementsList/agreementsList';
+import { usePathname } from 'next/navigation';
 
-export const MainPage = () => {
+export const AgreementsPage = () => {
   return (
     <div className="flex items-center justify-center w-full h-full">
       <Image
@@ -20,9 +21,10 @@ export const MainPage = () => {
           top: 0,
           left: 0,
           position: 'fixed',
-          zIndex: -1
+          zIndex: -1,
         }}
       ></Image>
+      <AgreementsList />
       {/* <button
         className="text-black border p-1 hover:bg-sky-700 
         transition ease-in-out delay-100 hover:text-white"
