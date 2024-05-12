@@ -11,13 +11,24 @@ module.exports = {
   theme: {
     extend: {
       content: {
-        'link': 'url("./public/icons/finger-pointer.svg")',
+        link: 'url("./public/icons/finger-pointer.svg")',
+      },
+      rotate: {
+        '46': '-45deg'
       },
       lineHeight: {
         'extra-loose': '2.5',
-        '2': '0.2rem',
-      }
+        2: '0.2rem',
+      },
+      // backgroundImage: {
+      //   'button': "url('./public/other/button.webp')",
+      // },
     },
+    // colors: {
+    //   '--pink': 'hsl(338, 70%, 55%)',
+    //   '--teal': 'hsl(183, 70%, 62%)',
+    //   '--white': 'hsl(334, 7%, 95%)',
+    // },
   },
   plugins: [],
 };

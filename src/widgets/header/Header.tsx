@@ -1,56 +1,71 @@
-import React from 'react';
-import logo from '../../../public/other/car-png.webp';
-import Logo1 from '../../../public/social/instagram-brands.svg';
-import Image from 'next/image';
 import Link from 'next/link';
 import { NavBar } from './navBar';
-import { usePathname } from 'next/navigation';
+import { useAppStore } from '@/shared/store/app-store';
 import s from './Header.module.css';
 
 export const Header = ({ modalHandler }: { modalHandler: () => void }) => {
-  const currentPath = usePathname();
-  const textColor = currentPath === '/agreements' ? 'text-white' : 'text-black';
+  const { isBurger, setBurger } = useAppStore();
+  const toggleMenu = () => setBurger(!isBurger);
+  const openMenuBeforeStyle = isBurger ? 'after:rotate-46 after:mt-[0px]' : '';
+  const openMenuAfterStyle = isBurger
+    ? 'before:rotate-45 before:!mt-[2px]'
+    : '';
+  const contactStyle = isBurger
+    ? 'hidden'
+    : 'hidden sm:flex px-4 py-2 bg-gradient-to-t from-gray-900 to-gray-600 rounded-md text-white ';
   return (
     <div
       id="header"
-      className="flex items-center w-full border-stone-300 p-4 justify-center h-[70px] fixed backdrop-blur-sm bg-white/10"
+      className="flex items-center w-full p-4 bg-white justify-center fixed z-50"
     >
       <div className="flex items-center w-full max-w-[1140px] justify-between">
         <Link href={'/'} className="flex cursor-pointer">
           <h1 className={s.logo}>AI</h1>
-          <div className="flex leading-[0.85rem] flex-col items-center justify-center pl-[8px] text-sm">
+          <div className="flex leading-[0.9rem] flex-col items-center justify-center pl-[8px] text-sm">
             <p>Alexey</p>
             <p>Iankov</p>
           </div>
         </Link>
-        <NavBar color={textColor} />
-        <div className="flex gap-6 items-center justify-center text-lg">
-          <a href="tel:+79248133753" className={`${textColor} font-medium`}>
-            +7 924 813 37 53
-          </a>
-          <button
-            className="px-4 py-2 text-sm transition ease-in-out delay-100 rounded-lg text-white hover:bg-red-500 bg-red-600"
-            onClick={modalHandler}
-          >
-            Оставить заявку
+        {!isBurger ? <NavBar name="hidden sm:flex" /> : null}
+
+        <div className="flex gap-6 items-center justify-center">
+          <button type="button" className={contactStyle} onClick={modalHandler}>
+            Связаться
           </button>
-          {/* <Image
-            src={logo1}
-            height={20}
-            width={20}
-            alt={''}
-            color='red'
-            // style={{ fill: 'red', stroke: 'red', color: 'blue' }}
-          /> */}
-          {/* <div
-            style={{
-              maxWidth: '20px',
-              maxHeight: '20px',
-              fill: 'red',
-            }}
+
+          <div
+            id="burger"
+            className={`${
+              isBurger ? ' !flex' : ''
+            } sm:hidden w-[35px] cursor-pointer h-[35px]`}
+            onClick={toggleMenu}
           >
-            <Logo1 />
-          </div> */}
+            <div className="flex items-center flex-col justify-center w-full h-full">
+              <span
+                className={`relative flex w-[65%] items-center 
+              before:content-[attr(before)] 
+              before:absolute 
+              before:w-[27px]
+              before:mt-[50%] 
+              before:left-[-2px] 
+              before:border-2
+              ${openMenuBeforeStyle}
+              before:border-black
+              before:transition before:ease-in-out before:duration-200
+
+              after:content-[attr(after)] 
+              after:absolute 
+              after:w-[27px]
+              after:mt-[-50%] 
+              after:left-[-2px] 
+              after:border-2
+              ${openMenuAfterStyle}
+              after:border-black
+              after:transition after:ease-in-out after:duration-200
+              `}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

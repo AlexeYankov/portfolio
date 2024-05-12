@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import BaseRootLayout from '@/widgets/layout/baseLayout';
 import { Exo } from 'next/font/google';
+import './globals.css';
 
 const exo2 = Exo({
   subsets: ['latin'],
@@ -11,8 +11,8 @@ const exo2 = Exo({
 });
 
 export const metadata: Metadata = {
-  title: 'Аренда авто в Чите',
-  description: 'Аренда авто в Чите',
+  title: 'Alexey Iankov',
+  description: 'Frontend-dev',
   // metadataBase: new URL('https://1111.com'),
   // manifest: 'https://1111.com',
   // category: 'аренда авто',
@@ -55,7 +55,7 @@ export default function RootLayout({
       {/* <body className={inter.className}>{children}</body> */}
       {/* <base href='https://1111.com'/>
       <meta httpEquiv="X-UA-Compatible" content='IE=edge'/> */}
-      <body>
+      <body className='noScrollbar'>
         <BaseRootLayout>{children}</BaseRootLayout>
       </body>
     </html>

@@ -1,11 +1,9 @@
 'use client';
 
 import React from 'react';
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
 import { Dialog } from '../dialog/dialog';
 import { Header } from '../header/Header';
-import { toastWrapper } from '@/shared/uikit/toastWrapper/toastWrapper';
+import { BurgerMenu } from '../burgerMenu/burgerMenu';
 
 
 export default function BaseRootLayout({
@@ -19,20 +17,10 @@ export default function BaseRootLayout({
   };
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={4000}
-        hideProgressBar
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
       <Header modalHandler={modalHandler} />
       {/* {isAppLoading && <Loader />} */}
       {/* <Header data={isAuth ? data : ({} as ProfileInfoType)} /> */}
+      <BurgerMenu />
       {children}
       {/* <button onClick={() => toastWrapper('success')}>weee</button> */}
 

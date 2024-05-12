@@ -1,19 +1,26 @@
 import Link from 'next/link';
 import { nav } from './constants';
+import { useRouter } from 'next/navigation';
 
-const link = ['/', '/', '/', '/agreements']
+const link = ['/', '/', '/', '/agreements'];
 
-export const NavBar = ({color}:{color: string}) => {
-  const notFirstElement = 'border-s-2 flex items-center';
-  const elementStyle = ' flex items-center';
+export const NavBar = ({name}:{name?: string}) => {
+  // const { isBurger, setBurger } = useAppStore();
+  const navigate = useRouter();
+  const clickHandler = (value: string) => {
+    // setBurger(false);
+    navigate.push(value);
+  };
+
   return (
-    <ul className="flex uppercase">
+    <ul className={`capitalize ${name}`}>
       {nav.map((el, i) => {
         return (
-          <li key={i} className={i === 0 ? elementStyle : notFirstElement}>
+          <li key={i} className="flex items-center scroll-smooth items-center'">
             <Link
               href={link[i]}
-              className={`px-[10px] font-medium ${color} transition ease-in-out delay-100 hover:text-red-600`}
+              className={`pr-4`}
+              // onClick={clickHandler}
             >
               {el}
             </Link>
