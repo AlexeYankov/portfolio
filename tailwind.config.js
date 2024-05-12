@@ -13,6 +13,10 @@ module.exports = {
       content: {
         'link': 'url("./public/icons/finger-pointer.svg")',
       },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '2': '0.2rem',
+      }
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ export const NavBar = ({color}:{color: string}) => {
   const notFirstElement = 'border-s-2 flex items-center';
   const elementStyle = ' flex items-center';
   return (
-    <ul className="flex pl-[40px] uppercase">
+    <ul className="flex uppercase">
       {nav.map((el, i) => {
         return (
           <li key={i} className={i === 0 ? elementStyle : notFirstElement}>

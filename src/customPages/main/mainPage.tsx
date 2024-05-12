@@ -20,18 +20,9 @@ export const MainPage = () => {
           top: 0,
           left: 0,
           position: 'fixed',
-          zIndex: -1
+          zIndex: -1,
         }}
       ></Image>
-      {/* <button
-        className="text-black border p-1 hover:bg-sky-700 
-        transition ease-in-out delay-100 hover:text-white"
-        onClick={() => alert('fef')}
-      >
-        click
-      </button> */}
-
-      {/* <!-- Modal toggle --> */}
     </div>
   );
 };

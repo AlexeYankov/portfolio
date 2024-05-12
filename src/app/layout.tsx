@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import BaseRootLayout from '@/widgets/layout/baseLayout';
-// import { Inter } from "next/font/google";
+import { Exo } from 'next/font/google';
 
-// const inter = Inter({ subsets: ["latin"] });
+const exo2 = Exo({
+  subsets: ['latin'],
+  style: ['normal'],
+  weight: ['400', '500'],
+  variable: '--font-exo2',
+});
 
 export const metadata: Metadata = {
   title: 'Аренда авто в Чите',
@@ -45,7 +50,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    // <html lang="en" className={`${exo2.variable} ${roboto_mono.variable}`}>
+    <html lang="en" className={`${exo2.variable}`}>
       {/* <body className={inter.className}>{children}</body> */}
       {/* <base href='https://1111.com'/>
       <meta httpEquiv="X-UA-Compatible" content='IE=edge'/> */}
