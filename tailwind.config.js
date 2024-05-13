@@ -14,7 +14,7 @@ module.exports = {
         link: 'url("./public/icons/finger-pointer.svg")',
       },
       rotate: {
-        '46': '-45deg'
+        46: '-45deg',
       },
       lineHeight: {
         'extra-loose': '2.5',

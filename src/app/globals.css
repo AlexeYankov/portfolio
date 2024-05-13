@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
+::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
-.no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

@@ -4,6 +4,7 @@ import React from 'react';
 import { Dialog } from '../dialog/dialog';
 import { Header } from '../header/Header';
 import { BurgerMenu } from '../burgerMenu/burgerMenu';
+import { Footer } from '../footer/footer';
 
 
 export default function BaseRootLayout({
@@ -29,7 +30,8 @@ export default function BaseRootLayout({
         <div className="fixed top-0 right-0 left-0 h-full opacity-[0.5] bg-black z-0" />
       ) : (''
       )}
-     <Dialog modal={modal} modalHandler={modalHandler}/>
+       <Footer />
+     {/* <Dialog modal={modal} modalHandler={modalHandler}/> */}
     </>
   );
 }

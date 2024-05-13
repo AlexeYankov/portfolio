@@ -1,0 +1,66 @@
+.bodySub4MainStyleContainer {
+  display: flex;
+  background-color: #f8f8f8;
+  color: #000000;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bodySub4 {
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  color: #000000;
+  /* height: 15dvh; */
+  line-height: 110%;
+  padding: 40px 0;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bodySub4part1 {
+  position: relative;
+  animation-name: slide;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.bodySub4part2 {
+  position: absolute;
+  animation-name: slide2;
+  animation-duration: 90s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.bodySub4:hover > div {
+  -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}

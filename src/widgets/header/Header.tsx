@@ -16,9 +16,9 @@ export const Header = ({ modalHandler }: { modalHandler: () => void }) => {
   return (
     <div
       id="header"
-      className="flex items-center w-full p-4 bg-white justify-center fixed z-50"
+      className="flex fixed items-center justify-center w-full bg-white z-50"
     >
-      <div className="flex items-center w-full max-w-[1140px] justify-between">
+      <div className="flex items-center w-full max-w-[1140px] p-4 justify-between">
         <Link href={'/'} className="flex cursor-pointer">
           <h1 className={s.logo}>AI</h1>
           <div className="flex leading-[0.9rem] flex-col items-center justify-center pl-[8px] text-sm">
