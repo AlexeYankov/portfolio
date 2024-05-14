@@ -21,7 +21,6 @@ export const Skills = () => {
             <div className="scale-50">
               <Frontend />
             </div>
-            {/* <h2 className="text-xl font-medium pb-2">Frontend</h2> */}
             <p className="text-sm text-start">
               <strong>Frontend</strong>
               <br />
@@ -35,7 +34,6 @@ export const Skills = () => {
             <div className="scale-50">
               <Backed />
             </div>
-            {/* <h2 className="text-xl font-medium pb-2">Frontend</h2> */}
             <p className="text-sm text-start">
               <strong>Backend</strong>
               <br />
@@ -50,7 +48,6 @@ export const Skills = () => {
             <div className="scale-50">
               <Ui />
             </div>
-            {/* <h2 className="text-xl font-medium pb-2">Frontend</h2> */}
             <p className="text-sm w-full text-start">
               <strong>UI/UX</strong>
               <br />
@@ -63,11 +60,11 @@ export const Skills = () => {
             <div className="scale-50">
               <Docker />
             </div>
-            {/* <h2 className="text-xl font-medium pb-2">Frontend</h2> */}
             <p className="text-sm w-full text-start">
               <strong>Docker</strong>
               <br />
-              Веду разработку с использованием Docker контейнеров.<br />
+              Веду разработку с использованием Docker контейнеров.
+              <br />
             </p>
           </div>
         </div>
