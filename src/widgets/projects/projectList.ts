@@ -406,7 +406,7 @@ export const projectList = [
       'figma',
     ],
     tasks:
-      'Авторизация пользователей. Редактирование настроек профиля. Создание постов. Ленивая загрузка постов. React Suspense.',
+      'Авторизация пользователей. Редактирование настроек профиля. Создание постов. Ленивая загрузка компонент. React Suspense.',
     code: 'https://github.com/AlexeYankov/samuraiway',
     demo: 'https://alexeyankov.github.io/samuraiway/',
   },
