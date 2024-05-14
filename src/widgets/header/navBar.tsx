@@ -19,7 +19,7 @@ export const NavBar = ({name}:{name?: string}) => {
           <li key={i} className="flex items-center scroll-smooth items-center'">
             <Link
               href={link[i]}
-              className={`pr-4`}
+              className={`pr-10`}
               // onClick={clickHandler}
             >
               {el}
