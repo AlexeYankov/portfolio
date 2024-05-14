@@ -1,7 +1,8 @@
-import Link from 'next/link';
+
 import { NavBar } from './navBar';
 import { useAppStore } from '@/shared/store/app-store';
-import s from './Header.module.css';
+
+import { Logo } from './Logo';
 
 export const Header = ({ modalHandler }: { modalHandler: () => void }) => {
   const { isBurger, setBurger } = useAppStore();
@@ -19,13 +20,7 @@ export const Header = ({ modalHandler }: { modalHandler: () => void }) => {
       className="flex fixed items-center justify-center w-full bg-white z-50"
     >
       <div className="flex items-center w-full max-w-[1140px] p-4 justify-between">
-        <Link href={'/'} className="flex cursor-pointer">
-          <h1 className={s.logo}>AI</h1>
-          <div className="flex leading-[0.9rem] flex-col items-center justify-center pl-[8px] text-sm">
-            <p>Alexey</p>
-            <p>Iankov</p>
-          </div>
-        </Link>
+        <Logo/>
         {!isBurger ? <NavBar name="hidden sm:flex" /> : null}
 
         <div className="flex gap-6 items-center justify-center">

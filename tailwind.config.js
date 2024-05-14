@@ -11,24 +11,17 @@ module.exports = {
   theme: {
     extend: {
       content: {
-        link: 'url("./public/icons/finger-pointer.svg")',
+        'phone': 'url("/footer/contacts/mobile-solid.svg")',
+        'mail': 'url("/footer/contacts/envelope-regular.svg")',
+        'location': 'url("/footer/contacts/location-dot-solid.svg")',
       },
       rotate: {
         46: '-45deg',
       },
-      lineHeight: {
-        'extra-loose': '2.5',
-        2: '0.2rem',
-      },
-      // backgroundImage: {
-      //   'button': "url('./public/other/button.webp')",
-      // },
+      colors: {
+        'default': 'currentColor'
+      }
     },
-    // colors: {
-    //   '--pink': 'hsl(338, 70%, 55%)',
-    //   '--teal': 'hsl(183, 70%, 62%)',
-    //   '--white': 'hsl(334, 7%, 95%)',
-    // },
   },
   plugins: [],
 };
