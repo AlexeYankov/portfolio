@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     // <html lang="en" className={`${exo2.variable} ${roboto_mono.variable}`}>
-     <html lang="en" className={`${exo2.variable}`} >
+     <html lang="en" className={`${exo2.variable } scroll-smooth`} >
       {/* <body className={inter.className}>{children}</body> */}
       {/* <base href='https://1111.com'/>
       <meta httpEquiv="X-UA-Compatible" content='IE=edge'/> */}

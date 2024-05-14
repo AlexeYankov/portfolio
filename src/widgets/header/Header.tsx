@@ -1,6 +1,7 @@
 
 import { NavBar } from './navBar';
 import { useAppStore } from '@/shared/store/app-store';
+import Link from 'next/link';
 
 import { Logo } from './Logo';
 
@@ -24,9 +25,9 @@ export const Header = ({ modalHandler }: { modalHandler: () => void }) => {
         {!isBurger ? <NavBar name="hidden sm:flex" /> : null}
 
         <div className="flex gap-6 items-center justify-center">
-          <button type="button" className={contactStyle} onClick={modalHandler}>
+          <Link href='/#contacts' className={contactStyle}>
             Связаться
-          </button>
+          </Link>
 
           <div
             id="burger"

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const Footer = () => {
   return (
-    <section className="flex justify-center items-center max-w-full bg-gradient-to-t from-gray-900 to-gray-800 rounded-t-[60px] text-white">
+    <section id="contacts" className="flex justify-center items-center max-w-full bg-gradient-to-t from-gray-900 to-gray-800 rounded-t-[60px] text-white">
       <div className="flex justify-between flex-col lg:flex-row text-white w-full relative max-w-[1140px] px-4 pt-10 items-start lg:justify-between">
         <div className="flex w-full items-center lg:items-start flex-col pb-12">
           <Logo />
@@ -19,7 +19,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex w-full flex-col items-center lg:items-start ">
-          <div className='flex flex-col w-[300px]'>
+          <div className="flex flex-col w-[300px]">
             <h2 className="flex text-2xl pb-4">Контакты</h2>
             <ul className="flex flex-col items-start justify-center">
               <li className="flex items-center pb-6 before:mr-2 justify-center before:content-mail before:w-6 before:h-6">

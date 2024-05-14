@@ -5,7 +5,8 @@ import Ui from '../../../public/skills/UI_UX.svg';
 
 export const Skills = () => {
   return (
-    <div className="flex select-none flex-col items-center justify-center w-full">
+    <div className="flex relative select-none flex-col items-center justify-center w-full">
+      <div id='skills' className='absolute left-2 top-[-50px]'/>
       <div className="flex-col px-4 flex items-center justify-start w-full max-w-[1140px] pb-12">
         <div className="flex flex-col justify-center items-center gap-3">
           <h1 className=" z-10 text-3xl sm:text-4xl font-medium pt-8">
@@ -39,7 +40,7 @@ export const Skills = () => {
               <br />
               Серверная часть Node js, C# (Entity framework), PHP. <br />{' '}
               Работал с Express (Node js). Создание эндпоинтов (REST API).
-              Разрабатывал чат на websocket (Websoket.io). Работа с БД
+              Реализовал чат на websocket (Websoket.io). Работа с БД
               PostgreSQL, MySQL, Mongodb.
             </p>
           </div>
