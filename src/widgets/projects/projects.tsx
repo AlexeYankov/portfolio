@@ -46,7 +46,15 @@ export const Projects = () => {
               return <ProjectComponent el={el} key={i} />;
             })
           ) : (
-            <h1 className="text-xl">Совпадений не найдено</h1>
+            <>
+              <h1 className="text-xl truncate max-w-[350px]">
+                <span className="truncate max-w-[300px] overflow-ellipsis">
+                  <strong>{inputValue}</strong>
+                </span>
+                <br />
+                эту технологию пока не освоил...
+              </h1>
+            </>
           )}
         </div>
       </div>
