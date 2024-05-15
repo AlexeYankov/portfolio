@@ -41,9 +41,13 @@ export const Projects = () => {
               className="flex w-full lg:w-[35%] text-gray-500 border-2 outline-0 border-gray-400 shadow-md rounded-md px-4 py-1"
             />
           </div>
-          {filteredProjects.map((el, i) => {
-            return <ProjectComponent el={el} key={i} />;
-          })}
+          {filteredProjects.length ? (
+            filteredProjects.map((el, i) => {
+              return <ProjectComponent el={el} key={i} />;
+            })
+          ) : (
+            <h1 className="text-xl">Совпадений не найдено</h1>
+          )}
         </div>
       </div>
     </div>

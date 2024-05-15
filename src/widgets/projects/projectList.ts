@@ -1,6 +1,7 @@
 export const projectList = [
   {
     video: '',
+    image: '/videos/myQue.png',
     title: 'моя очередь',
     techs: [
       'моя очередь',
@@ -48,6 +49,7 @@ export const projectList = [
   },
   {
     video: '',
+    image: '/videos/gbzu.png',
     title: 'ГБУЗ РБ',
     techs: [
       'ГБУЗ РБ',
@@ -99,7 +101,7 @@ export const projectList = [
     demo: 'https://gkb5ufa.ru/',
   },
   {
-    video: '',
+    video: '/videos/Inctagramm.mp4',
     title: 'Inctagramm',
     techs: [
       'Inctagramm',
@@ -143,7 +145,7 @@ export const projectList = [
     demo: 'https://inctagramm.vercel.app/',
   },
   {
-    video: '',
+    video: '/videos/chitaAuto.mp4',
     title: 'chita-auto',
     techs: [
       'chita-auto',
@@ -186,7 +188,7 @@ export const projectList = [
     demo: 'https://chita-avto.vercel.app/',
   },
   {
-    video: '',
+    video: '/videos/chitaAuto.mp4',
     title: 'Тестовое задание APPTRIX',
     techs: [
       'Тестовое задание APPTRIX',
@@ -233,7 +235,7 @@ export const projectList = [
     demo: 'https://empty-flame.vercel.app/',
   },
   {
-    video: '',
+    video: '/videos/reactQuery.mp4',
     title: 'Flash cards (react-query)',
     techs: [
       'Flash cards',
@@ -279,7 +281,7 @@ export const projectList = [
     demo: 'https://my-next-js-app-delta.vercel.app/',
   },
   {
-    video: '',
+    video: '/videos/portfolio1.mp4',
     title: 'Portfolio v 1.0',
     techs: [
       'Portfolio v 1.0',
@@ -305,7 +307,7 @@ export const projectList = [
     demo: 'https://alexeyankov.github.io/portfolioYankovAV/',
   },
   {
-    video: '',
+    video: '/videos/learningCards.mp4',
     title: 'Flash cards (RTK QUERY)',
     techs: [
       'Flash cards',
@@ -344,7 +346,7 @@ export const projectList = [
     demo: 'https://learning-cards-beige.vercel.app/',
   },
   {
-    video: '',
+    video: '/videos/rocketBusiness.mp4',
     title: 'Тестовое задание Rocket Business',
     techs: [
       'Тестовое задание Rocket Business',
@@ -369,7 +371,7 @@ export const projectList = [
     demo: 'https://rocket-business-gamma.vercel.app/',
   },
   {
-    video: '',
+    video: '/videos/buddy.mp4',
     title: 'buddy',
     techs: [
       'rebuddyact',
@@ -412,6 +414,7 @@ export const projectList = [
   },
   {
     video: '',
+    image: '/videos/design.png',
     title: 'buddy (дизайн)',
     techs: ['дизайн', 'design', 'figma', 'фигма', 'buddy (дизайн)'],
     icons: ['design', 'figma'],
