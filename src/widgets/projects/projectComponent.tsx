@@ -69,7 +69,6 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
               // onMouseOut={event => event.target.pause()}
               data-autoplay=""
               autoPlay
-              webkit-playsinline="true"
               muted={true}
               playsInline
               ref={videoRef}
