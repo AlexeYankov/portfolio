@@ -51,7 +51,7 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
       <h1 className="text-xl p-4 lg:text-2xl uppercase font-medium">
         {el.title}
       </h1>
-      <div className="flex w-full p-4 lg:p-8  flex-col justify-center md:flex-row">
+      <div className="flex w-full p-4 lg:pr-8 lg:pl-8 lg:pb-8 lg:pt-0 flex-col justify-center md:flex-row">
         <div className="flex w-full justify-center items-center rounded-lg lg:w-[40%]">
           {el.image && (
             <img
@@ -79,7 +79,7 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
             </video>
           )}
         </div>
-        <div className="flex w-full lg:max-w-[60%] flex-col gap-4 pt-4 sm:p-4 lg:pr-8">
+        <div className="flex w-full lg:max-w-[60%] flex-col gap-4 pt-4 sm:p-4 lg:px-8">
           <div className="hidden sm:flex flex-col w-full flex-wrap">
             <h2 className="text-md font-medium pb-2">Стек:</h2>
             <ul className="w-full flex flex-wrap gap-2 text-white">
