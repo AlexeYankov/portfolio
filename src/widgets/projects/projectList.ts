@@ -43,7 +43,7 @@ export const projectList = [
       'axios',
     ],
     tasks:
-      'Разработка авторизационного флоу. Разработка функциональности личного кабинета. Работа с файлами, видео (REST API). Работа с таблицами Material UI',
+      'Регистрация пользователя. Валидация форм (react hook form). Разработка функций личного кабинета. Работа с файлами, видео (REST API). Работа с таблицами Material UI',
     code: '',
     demo: 'https://eq.loes.ru/',
   },
@@ -96,7 +96,7 @@ export const projectList = [
       'axios',
     ],
     tasks:
-      'Разработка функциональности личного кабинета. Создание чата на Websocket (websocket.io. Работа с системой документооборота. Написание unit tests (jest). Работа с Radix UI, Storybook. Работа с анимациями (animista.net)',
+      'Разработка функционала личного кабинета. Создание чата на Websocket (websocket.io. Работа с системой внутреннего документооборота. Написание unit tests (jest). Работа с Radix UI, Storybook. Работа с анимациями (animista.net)',
     code: '',
     demo: 'https://gkb5ufa.ru/',
   },

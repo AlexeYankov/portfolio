@@ -26,7 +26,7 @@ export const Skills = () => {
               <strong>Frontend</strong>
               <br />
               Предпочитаемый стек Next js, TS, Zustand, Redux, RTK Query, React
-              Query. Работал с Material UI, Radix UI, Chackra UI, Styled
+              Query. Использую Material UI, Radix UI, Chackra UI, Styled
               components, SASS, SCSS.
             </p>
           </div>
@@ -40,7 +40,7 @@ export const Skills = () => {
               <br />
               Серверная часть Node js, C# (Entity framework), PHP. <br />{' '}
               Работал с Express (Node js). Создание эндпоинтов (REST API).
-              Реализовал чат на websocket (Websoket.io). Работа с БД
+              Реализовал чат на websocket (Websoket.io). Работал с БД
               PostgreSQL, MySQL, Mongodb.
             </p>
           </div>
@@ -52,8 +52,8 @@ export const Skills = () => {
             <p className="text-sm w-full text-start">
               <strong>UI/UX</strong>
               <br />
-              Создание собственного прототипа дизайна Figma. <br />
-              Уточнение, корректировка макета согласно пожеланиям заказчика.
+              Создание прототипа дизайна Figma. <br />
+              Корректировка макета согласно пожеланиям заказчика.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export const Skills = () => {
             <p className="text-sm w-full text-start">
               <strong>Docker</strong>
               <br />
-              Веду разработку с использованием Docker контейнеров.
+              Веду разработку с использованием Docker.
               <br />
             </p>
           </div>
