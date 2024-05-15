@@ -96,8 +96,8 @@ export const ImagesContainer = () => {
     <ul className="flex w-full pt-8 gap-10 sm:pt-0 items-center justify-center">
       {imagesCase.map((el, i) => {
         const clsxStyle = clsx('flex max-w-[110px] max-h-[90px] ', {
-          ['max-w-[82px]']: el.title === 'CSS3',
-          ['max-w-[80px]']: el.title === 'HTML5',
+          ['max-w-[68px]']: el.title === 'CSS3',
+          ['max-w-[90px]']: el.title === 'HTML5',
           ['max-w-[255px]']:
             el.title === 'reactQuery' ||
             el.title === 'Next' ||
