@@ -1,7 +1,7 @@
 export const projectList = [
   {
     video: '',
-    image: '/videos/myQue.png',
+    image: '/videos/myQue.webp',
     title: 'моя очередь',
     techs: [
       'моя очередь',
@@ -49,7 +49,7 @@ export const projectList = [
   },
   {
     video: '',
-    image: '/videos/gbzu.png',
+    image: '/videos/gbzu.webp',
     title: 'ГБУЗ РБ',
     techs: [
       'ГБУЗ РБ',
@@ -188,7 +188,7 @@ export const projectList = [
     demo: 'https://chita-avto.vercel.app/',
   },
   {
-    video: '/videos/chitaAuto.mp4',
+    video: '/videos/apptrix.mp4',
     title: 'Тестовое задание APPTRIX',
     techs: [
       'Тестовое задание APPTRIX',
@@ -307,7 +307,7 @@ export const projectList = [
     demo: 'https://alexeyankov.github.io/portfolioYankovAV/',
   },
   {
-    video: '/videos/learningCards.mp4',
+    video: '/videos/reactQuery.mp4',
     title: 'Flash cards (RTK QUERY)',
     techs: [
       'Flash cards',
@@ -414,7 +414,7 @@ export const projectList = [
   },
   {
     video: '',
-    image: '/videos/design.png',
+    image: '/videos/design.webp',
     title: 'buddy (дизайн)',
     techs: ['дизайн', 'design', 'figma', 'фигма', 'buddy (дизайн)'],
     icons: ['design', 'figma'],

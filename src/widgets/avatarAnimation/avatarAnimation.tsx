@@ -1,6 +1,6 @@
 import './avatarAnimation.css';
 import Image from 'next/image';
-import AvatarPhoto from '/public/avatar/AboutPhoto.png';
+import AvatarPhoto from '/public/avatar/AboutPhoto.webp';
 
 export const AvatarAnimation = () => {
   return (

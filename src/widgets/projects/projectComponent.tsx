@@ -13,35 +13,39 @@ type ProjectComponentType = {
 };
 
 export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
-  const [id, setId] = useState(false);
-  const [hovered, setHovered] = useState(false);
   const swiperRefLocal = useRef(null);
   const videoRef = useRef<any>(null);
-  const handleMouseEnter = () => {
-    setId(true);
-    //@ts-ignore
-    // videoRef.current?.autoplay.start()
-  };
-  const handleMouseLeave = () => {
-    setId(false);
-  };
-  useEffect(() => {
-    if (!id) {
-      setHovered(false);
-      return;
-    }
+  // const [id, setId] = useState(false);
+  // const [hovered, setHovered] = useState(false);
+  // const handleMouseEnter = () => {
+  // setId(true);
+  //@ts-ignore
+  // videoRef.current?.autoplay.start()
+  // };
+  // const handleMouseLeave = () => {
+  //   setId(false);
+  // };
+  // useEffect(() => {
+  //   if (!id) {
+  //     setHovered(false);
+  //     return;
+  //   }
 
-    if (id) {
-      //open bug since 2017 that you cannot set muted in video element https://github.com/facebook/react/issues/10389
-      setHovered(true);
-    }
-  }, [id]);
+  //   if (id) {
+  //     //open bug since 2017 that you cannot set muted in video element https://github.com/facebook/react/issues/10389
+  //     setHovered(true);
+  //   }
+  // }, [id]);
+
+  const buttonDisableStyle = !el.code
+    ? 'cursor-not-allowed bg-gradient-to-t from-gray-200 to-gray-400'
+    : 'bg-gradient-to-t from-gray-900 to-gray-600 ';
 
   return (
     <div
-      onMouseEnter={handleMouseEnter}
+      // onMouseEnter={handleMouseEnter}
       ref={swiperRefLocal}
-      onMouseLeave={handleMouseLeave}
+      // onMouseLeave={handleMouseLeave}
       className="flex flex-col justify-center items-center rounded-lg w-full transition-all duration-300 hover:bg-gray-100 shadow-lg"
     >
       <h1 className="text-xl p-4 lg:text-2xl uppercase font-medium">
@@ -56,7 +60,7 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
               alt={el.title}
             />
           )}
-          {el.video &&
+          {el.video && (
             <video
               loop
               // // @ts-ignore
@@ -67,14 +71,14 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
               autoPlay
               webkit-playsinline="true"
               muted={true}
-              playsInline 
+              playsInline
               ref={videoRef}
               preload="auto"
               style={{ width: '100%', height: '100%', borderRadius: '8px' }}
             >
               <source src={el.video} type="video/mp4"></source>
             </video>
-          }
+          )}
         </div>
         <div className="flex w-full lg:max-w-[60%] flex-col gap-4 pt-4 sm:p-4 lg:pr-8">
           <div className="hidden sm:flex flex-col w-full flex-wrap">
@@ -100,7 +104,8 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
           <div className="flex gap-4">
             <Link
               href={el.code}
-              className="flex px-4 py-1 bg-gradient-to-t from-gray-900 to-gray-600 rounded-md text-white"
+              className={`flex px-4 py-1 rounded-md text-white ${buttonDisableStyle}`}
+              title={el.code ? '' : 'подписал NDA'}
             >
               Code (Git)
             </Link>
