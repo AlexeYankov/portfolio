@@ -101,13 +101,23 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
           </div>
 
           <div className="flex gap-4">
-            <Link
-              href={el.code}
-              className={`flex px-4 py-1 rounded-md text-white ${buttonDisableStyle}`}
-              title={el.code ? '' : 'подписал NDA'}
-            >
-              Code (Git)
-            </Link>
+            {el.code ? (
+              <Link
+                href={el.code}
+                className={`flex px-4 py-1 rounded-md text-white ${buttonDisableStyle}`}
+                title={el.code ? '' : 'подписал NDA'}
+              >
+                Code (Git)
+              </Link>
+            ) : (
+              <button
+                disabled
+                className={`flex px-4 py-1 rounded-md text-white ${buttonDisableStyle}`}
+                title={el.code ? '' : 'подписал NDA'}
+              >
+                Code (Git)
+              </button>
+            )}
             <Link
               href={el.demo}
               className="flex px-4 py-1 bg-gradient-to-t from-gray-900 to-gray-600 rounded-md text-white"
