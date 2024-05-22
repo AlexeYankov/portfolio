@@ -374,7 +374,7 @@ export const projectList = [
     video: '/videos/buddy.mp4',
     title: 'buddy',
     techs: [
-      'rebuddyact',
+      'buddyact',
       'react',
       'реакт',
       'react router dom v5/6',
@@ -421,5 +421,29 @@ export const projectList = [
     tasks: 'Разработка прототипа дизайна в Figma',
     code: 'https://github.com/AlexeYankov/designSocialnetwork',
     demo: '',
+  },
+  {
+    video: '/videos/itrum.mp4',
+    title: 'buddy',
+    techs: [
+      'html',
+      'хтмл',
+      'css',
+      'figma',
+      'фигма',
+      'js',
+      'джс',
+      'жс'
+    ],
+    icons: [
+      'html',
+      'css',
+      'js',
+      'figma',
+    ],
+    tasks:
+      'Адаптивная верстка. Vanila js, html, css.',
+    code: 'https://github.com/AlexeYankov/Itrum',
+    demo: 'https://itrum.vercel.app/',
   },
 ];
