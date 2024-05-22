@@ -424,7 +424,7 @@ export const projectList = [
   },
   {
     video: '/videos/itrum.mp4',
-    title: 'buddy',
+    title: 'Itrum',
     techs: [
       'html',
       'хтмл',
@@ -442,7 +442,7 @@ export const projectList = [
       'figma',
     ],
     tasks:
-      'Адаптивная верстка. Vanila js, html, css.',
+      'Лендинг. Тестовое задание. Адаптивная верстка. Vanila js, html, css.',
     code: 'https://github.com/AlexeYankov/Itrum',
     demo: 'https://itrum.vercel.app/',
   },
