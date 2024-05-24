@@ -20,18 +20,18 @@ export async function generateMetadata(): Promise<Metadata> {
     title: 'Alexey Iankov',
     description: 'Frontend-dev',
     // metadataBase: new URL('https://1111.com'),
-    manifest: 'https://iankov.ru',
+    // manifest: 'https://iankov.ru',
     // category: 'аренда авто',
     icons: {
       icon: '/favicon/favicon.ico', // /public path
     },
     alternates: {
-      canonical: 'https://iankov.ru',
+      // canonical: 'https://iankov.ru',
     },
     openGraph: {
       title: 'Alexey Iankov',
       description: 'Frontend-dev',
-      url: 'https://iankov.ru',
+      // url: 'https://iankov.ru',
       siteName: 'Frontend-dev',
       type: 'website',
     },
@@ -43,9 +43,9 @@ export async function generateMetadata(): Promise<Metadata> {
         index: true,
         follow: false,
         noimageindex: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
+        // 'max-video-preview': -1,
+        // 'max-image-preview': 'large',
+        // 'max-snippet': -1,
       },
     },
   };

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 
 type ProjectComponentType = {
   video: string;
@@ -68,11 +68,11 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
               // // @ts-ignore
               // onMouseOut={event => event.target.pause()}
               data-autoplay=""
-              autoPlay
+              autoPlay={true}
               muted={true}
               playsInline
               ref={videoRef}
-              preload="auto"
+              preload="preload"
               style={{ width: '100%', height: '100%', borderRadius: '8px' }}
             >
               <source src={el.video} type="video/mp4"></source>

@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/06b98bd4-5f3d-4815-841a-deba14be72fb/reactQuery.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240524%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20240524T084918Z&X-Amz-Expires=86400&X-Amz-Signature=a8d50a142ca26cc02ed157c5ef2421e733bf0ee85803dc99b3f54581639cf9d3&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22reactQuery.mp4%22&response-content-type=video%2Fmp4&x-id=GetObject
