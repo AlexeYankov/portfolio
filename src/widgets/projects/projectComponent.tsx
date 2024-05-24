@@ -72,7 +72,7 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
               muted={true}
               playsInline
               ref={videoRef}
-              preload="preload"
+              preload='auto'
               style={{ width: '100%', height: '100%', borderRadius: '8px' }}
             >
               <source src={el.video} type="video/mp4"></source>
