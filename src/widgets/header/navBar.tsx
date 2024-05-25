@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { nav } from './constants';
 import { useAppStore } from '@/shared/store/app-store';
 
-const link = ['/#projects', '/#skills', '/', '/agreements'];
+const link = ['/#projects', '/#skills', 'https://drive.google.com/file/d/12mTO2qFvG_tlp80KbGuedHBvA4byuAkt/view?usp=sharing', '/agreements'];
 
 export const NavBar = ({ name }: { name?: string }) => {
   const { setBurger } = useAppStore();
