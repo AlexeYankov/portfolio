@@ -141,7 +141,7 @@ export const projectList = [
     tasks:
       'Лендинг аренда авто. Отзывы пользователей. Галерея фото авто. Форма обратной связи.',
     code: 'https://github.com/AlexeYankov/chitaAvto',
-    demo: 'https://chita-avto.vercel.app/',
+    demo: 'https://chita-avto.vercel.app',
   },
   {
     video: '/videos/portfolio1.mp4',
@@ -162,11 +162,13 @@ export const projectList = [
       'тайпскрипт',
       'материал',
       'react hook form',
+      'keyframes',
+      'react lazy',
     ],
-    icons: ['react', 'react router dom v5/6', 'spa', 'html', 'scss', 'ts'],
+    icons: ['react','react lazy', 'keyframes', 'react router dom v5/6', 'spa', 'html', 'scss', 'ts'],
     tasks:
       'Ленивая подгрузка компонент. Работа с анимацией, keyframes. Адаптивная вёрстка.',
     code: 'https://github.com/AlexeYankov/portfolioYankovAV',
-    demo: 'https://alexeyankov.github.io/portfolioYankovAV/',
+    demo: 'https://alexeyankov.github.io/portfolioYankovAV',
   },
 ];
