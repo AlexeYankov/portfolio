@@ -56,12 +56,11 @@ export const Footer = () => {
               className="flex text-sm items-center justify-start w-[145px] cursor-pointer shadow-2xl mt-4 gap-1 rounded-lg p-2"
             >
               <Image
-                src={'/footer/contacts/whatsapp.jpg'}
-                width={50}
+                src={'/footer/contacts/watsap.png'}
+                width={45}
                 height={40}
                 className="flex rounded-xl"
                 alt=""
-                // style={{width: "auto", height: "auto"}}
               />
               Whatsapp
             </Link>
