@@ -12,7 +12,7 @@ type ProjectComponentType = {
   demo: string;
 };
 
-export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
+const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
   const swiperRefLocal = useRef(null);
   const videoRef = useRef<any>(null);
   // const [id, setId] = useState(false);
@@ -130,3 +130,5 @@ export const ProjectComponent = ({ el }: { el: ProjectComponentType }) => {
     </div>
   );
 };
+
+export default ProjectComponent;

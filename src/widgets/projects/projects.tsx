@@ -1,6 +1,8 @@
-import { useState } from 'react';
-import { ProjectComponent } from './projectComponent';
+import { useState, Suspense, lazy } from 'react';
 import { projectList } from './projectList';
+import { VideoLoader } from '@/shared/uikit/videoLoader/videoLoader';
+
+const ProjectComponent = lazy(() => import('./projectComponent'));
 
 export const Projects = () => {
   const [inputValue, setValue] = useState('');
@@ -43,7 +45,11 @@ export const Projects = () => {
           </div>
           {filteredProjects.length ? (
             filteredProjects.map((el, i) => {
-              return <ProjectComponent el={el} key={i} />;
+              return (
+                <Suspense fallback={<VideoLoader />} key={i}>
+                  <ProjectComponent el={el} />
+                </Suspense>
+              );
             })
           ) : (
             <>

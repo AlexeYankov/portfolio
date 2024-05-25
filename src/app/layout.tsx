@@ -21,17 +21,13 @@ export async function generateMetadata(): Promise<Metadata> {
     description: 'Frontend-dev',
     // metadataBase: new URL('https://1111.com'),
     // manifest: 'https://iankov.ru',
-    // category: 'аренда авто',
+    category: 'веб разработчик, web developer, frontend',
     icons: {
       icon: '/favicon/favicon.ico', // /public path
-    },
-    alternates: {
-      // canonical: 'https://iankov.ru',
     },
     openGraph: {
       title: 'Alexey Iankov',
       description: 'Frontend-dev',
-      // url: 'https://iankov.ru',
       siteName: 'Frontend-dev',
       type: 'website',
     },
