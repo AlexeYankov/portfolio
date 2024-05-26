@@ -1,7 +1,7 @@
-import Frontend from '../../../public/skills/Frontend.svg';
-import Backed from '../../../public/skills/Backend.svg';
-import Docker from '../../../public/skills/Docker.svg';
-import Ui from '../../../public/skills/UI_UX.svg';
+import Frontend from '/public/skills/Frontend.svg';
+import Backed from '/public/skills/Backend.svg';
+import Docker from '/public/skills/Docker.svg';
+import Ui from '/public/skills/UI_UX.svg';
 
 export const Skills = () => {
   return (

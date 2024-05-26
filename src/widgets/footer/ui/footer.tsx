@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Logo } from '../header/Logo';
 import Link from 'next/link';
+import { Logo } from '../../header/ui/Logo';
 
 export const Footer = () => {
   return (
@@ -46,20 +46,19 @@ export const Footer = () => {
                 src={'/footer/contacts/telegram.png'}
                 width={30}
                 height={30}
-                className="flex rounded-xl"
                 alt=""
               />
               Telegramm
             </Link>
             <Link
               href="https://wa.me/79248133753"
-              className="flex text-sm items-center justify-start w-[145px] cursor-pointer shadow-2xl mt-4 gap-1 rounded-lg p-2"
+              className="flex text-sm items-center justify-start w-[145px] cursor-pointer shadow-2xl mt-4 gap-1 p-2"
             >
               <Image
-                src={'/footer/contacts/watsap.png'}
-                width={45}
-                height={40}
-                className="flex rounded-xl"
+                src={'/footer/contacts/whatsapp.jpg'}
+                width={35}
+                height={35}
+                className="rounded-md ml-[5px] mr-2"
                 alt=""
               />
               Whatsapp

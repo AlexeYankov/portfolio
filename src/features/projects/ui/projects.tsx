@@ -1,5 +1,5 @@
 import { useState, Suspense, lazy } from 'react';
-import { projectList } from './projectList';
+import { projectList } from '../projectList';
 import { VideoLoader } from '@/shared/uikit/videoLoader/videoLoader';
 
 const ProjectComponent = lazy(() => import('./projectComponent'));

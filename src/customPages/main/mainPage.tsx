@@ -1,10 +1,10 @@
 'use client';
 
-import { AnimatedCode } from '@/widgets/animatedCode/animatedCode';
-import { AvatarAnimation } from '@/widgets/avatarAnimation/avatarAnimation';
-import { Projects } from '@/widgets/projects/projects';
-import { Skills } from '@/widgets/skills/skills';
-import { Ticker } from '@/widgets/ticker/ticker';
+import AnimatedCode from '@/widgets/animatedCode';
+import AvatarAnimation from '@/widgets/avatarAnimation';
+import Ticker from '@/widgets/ticker';
+import Projects from '@/features/projects';
+import Skills from '@/widgets/skills';
 
 export const MainPage = () => {
   return (

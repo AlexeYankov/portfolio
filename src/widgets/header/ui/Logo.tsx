@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useAppStore } from '@/shared/store/app-store';
+import { useAppStore } from '@/entities/store/app-store';
 import s from './Header.module.css';
 
 export const Logo = () => {

@@ -1,10 +1,9 @@
 'use client';
 
 import React from 'react';
-import { Dialog } from '../dialog/dialog';
-import { Header } from '../header/Header';
-import { BurgerMenu } from '../burgerMenu/burgerMenu';
-import { Footer } from '../footer/footer';
+import Header from '@/widgets/header';
+import BurgerMenu from '@/widgets/burgerMenu';
+import Footer from '@/widgets/footer';
 
 
 export default function BaseRootLayout({

@@ -1,6 +1,6 @@
 
 import { NavBar } from './navBar';
-import { useAppStore } from '@/shared/store/app-store';
+import { useAppStore } from '@/entities/store/app-store';
 import Link from 'next/link';
 
 import { Logo } from './Logo';

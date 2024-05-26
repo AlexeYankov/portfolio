@@ -1,6 +1,6 @@
 import { usePathname } from 'next/navigation';
-import { NavBar } from '../header/navBar';
-import { useAppStore } from '@/shared/store/app-store';
+import { NavBar } from '../../header/ui/navBar';
+import { useAppStore } from '@/entities/store/app-store';
 import Link from 'next/link';
 import s from './burgerAnimation.module.css';
 

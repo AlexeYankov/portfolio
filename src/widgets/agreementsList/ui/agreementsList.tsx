@@ -1,4 +1,4 @@
-import { list } from './const';
+import { list } from '../const';
 import Bullet from '../../../public/icons/finger-pointer.svg';
 
 export const AgreementsList = () => {
